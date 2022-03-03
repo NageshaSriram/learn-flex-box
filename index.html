@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Flexbox</title>
+    <style>
+      .main-container {
+        display: flex;
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn Flexbox</title>
-</head>
+        /* flex-wrap: wrap; */
+      }
+      .heading {
+        display: flex;
+        background-color: rgb(4, 189, 251);
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+      }
+      .heading-items {
+        color: #fff;
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="container"></div>
-
-</body>
-
+  <body>
+    <div class="main-container">
+      <div class="heading">
+        <p class="heading-items">Home</p>
+        <p class="heading-items">About</p>
+        <p class="heading-items">Product</p>
+        <p class="heading-items">Contact</p>
+      </div>
+    </div>
+  </body>
 </html>
